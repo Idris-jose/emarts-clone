@@ -66,7 +66,6 @@ export default function Home() {
       <Footer />
       <BottomNav onSearchClick={() => {
         setIsMobileSearchOpen(!isMobileSearchOpen);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       }} />
     </div>
   );
