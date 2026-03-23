@@ -10,7 +10,7 @@ import { useState } from 'react'
 
 const Header = ({ isMobileSearchOpen, setIsMobileSearchOpen }: { isMobileSearchOpen?: boolean, setIsMobileSearchOpen?: (val: boolean) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const user = ["As a Customer","As a Seller"]
+  const user = ["As a Customer","As a Vendor"]
   return (
 <header className="w-full relative sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
   <div className='flex items-center justify-between py-4 lg:py-6 mx-auto w-full max-w-[1366px] px-4 md:px-6 lg:px-8 2xl:px-10 gap-3'>
