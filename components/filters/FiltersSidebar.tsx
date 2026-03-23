@@ -5,11 +5,12 @@ import DiscountSelect from './DiscountSelect'
 import PriceSelect from './PriceSelect'
 
 const FiltersSidebar = ({filters, setFilters}: {filters: any, setFilters: any}) => {
-  return (
+
+    return (
     <div className=' bg-white shadow-sm rounded-[10px] lg:px-[20px] lg:py-[20px] flex flex-col gap-6'>
         <div className='flex items-center justify-between'>
             <h2 className='text-lg font-semibold'>Filters</h2>
-            <button className='text-sm text-gray-500'>Clear All</button>
+            <button onClick={() => setFilters({min:0,max:0,discount:"all",category:"Fashion"})} className='text-sm text-gray-500'>Clear All</button>
         </div>
         <div className='flex flex-wrap gap-2'>
             <div className='group flex w-fit items-center gap-2 border border-gray-200 rounded-lg text-[13px] px-3 py-1.5 capitalize text-black cursor-pointer transition-colors duration-200 ease-in-out hover:border-black bg-white'>
