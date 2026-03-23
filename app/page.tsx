@@ -40,15 +40,12 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Mobile Drawer */}
       {isMobileFiltersOpen && (
         <div className="fixed inset-0 z-50 flex lg:hidden">
-          {/* Overlay */}
           <div 
             className="fixed inset-0 bg-black/50 transition-opacity" 
             onClick={() => setIsMobileFiltersOpen(false)} 
           />
-          {/* Sidebar */}
           <div className="relative w-full bg-white h-full max-w-sm overflow-y-auto shadow-xl animate-in slide-in-from-left duration-300">
             <div className="p-4 border-b border-gray-100 sticky flex top-0 bg-white z-10">
               <button 
