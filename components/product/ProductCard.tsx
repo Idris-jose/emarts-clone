@@ -46,7 +46,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           {product.name}
         </h3>
 
-        <button className="px-3 py-1 border rounded-lg hover:bg-gray-100">
+        <button className="px-3 py-1 hidden lg:block border rounded-lg hover:bg-gray-100">
             <ShoppingCart size={16} />
           </button>
         </div>        
@@ -75,6 +75,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         </div>
       </div>
+      <button className=" flex lg:hidden items-center justify-center gap-2 p-3 w-full px-3 py-1 border rounded-lg hover:bg-gray-100 mt-3">
+            Add to Cart<ShoppingCart size={16} />
+          </button>
     </div>
   );
 };

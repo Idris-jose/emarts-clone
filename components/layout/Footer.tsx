@@ -11,7 +11,7 @@ const TiktokIcon = ({ size = 20, className = "" }) => (
 
 const Footer = () => {
   return (
-    <footer className='bg-white pt-12 lg:pt-16 pb-6'>
+    <footer className='bg-white lg:block hidden pt-12 lg:pt-16 pb-6'>
         <div className='mx-auto w-full max-w-[1366px] px-4 md:px-6 lg:px-8 2xl:px-10 '>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-12'>
                 <div className='lg:col-span-2'>

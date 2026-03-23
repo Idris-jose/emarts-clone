@@ -31,7 +31,7 @@ const SortDropdown = ({sort, setSort}: SortDropdownProps) => {
         className={`relative flex items-center justify-between gap-2 bg-white border ${isOpen ? 'border-[#9bbc55]' : 'border-gray-200'} px-3 md:px-3 py-1.5 md:py-2 rounded-md transition-colors hover:border-[#9bbc55] min-w-[180px] lg:min-w-[200px] cursor-pointer w-full focus:outline-none`}
       >
         <div className="flex items-center gap-1.5">
-            <span className='text-[13px] text-gray-500 whitespace-nowrap'>Sort by:</span>
+            <span className='text-[13px] text-gray-500  lg:block hidden whitespace-nowrap'>Sort by:</span>
             <span className='text-[13px] font-medium text-black'>{selectedOption.label}</span>
         </div>
         <ChevronDown size={15} strokeWidth={2} className={`text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
